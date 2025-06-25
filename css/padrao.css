@@ -1,0 +1,77 @@
+
+
+.geral_Flex {
+    display: flex;
+    height: 100vh;
+    /* Altura total da tela */
+}
+
+.area_menu {
+    width: 30%;
+    /* Metade da largura */
+    background-color: #353ff9; 
+    padding: 20px;
+    border-right: 10px solid orange;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+button {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+button {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+.area_conteudo {
+    position: relative;
+    width: 70%;
+    /* Metade da largura */
+    background-color: #c2b5b5;
+    /* Cor de fundo */
+    padding: 20px;
+}
+.titulo_conteudo{
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px 50px ;
+  padding: 50px; 
+  background-color: orange;
+}
+
+.area_globo {
+ justify-content: center;
+}
+.globo { 
+    margin: center;
+ position: absolute;
+ margin: 30% 25%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
