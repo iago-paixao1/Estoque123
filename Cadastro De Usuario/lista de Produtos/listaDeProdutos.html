@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/padrao.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+          <section class="produtos" id="area_produtos" style="display:none;">
+        <h2>Cadastro de Produto</h2>
+        <form onsubmit="cadastrarProduto(event)">
+          <input type="text" id="codigo" placeholder="Código" required>
+          <input type="text" id="descricao" placeholder="Descrição" required>
+          <input type="number" id="estoque" placeholder="Estoque Inicial" required>
+          <input type="text" id="valor" placeholder="Valor" required>
+          <input type="text" id="categoria" placeholder="Categoria" required>
+          <div class="botoes_form">
+            <button type="submit">Salvar</button>
+            <button type="reset">Cancelar</button>
+            <br><br>
+        <h2>Lista de Produtos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Categoria</th>
+              <th>Estoque</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaProdutos"></tbody>
+        </table>
+  </div>
+  </form>
+  </section>
+    <script src="../js/listaDeProdutos.js"></script>
+    <script>
+        // Exemplo de como carregar os produtos ao iniciar a página
+        document.addEventListener('DOMContentLoaded', function() {
+            carregarProdutos();
+        });
+    </script>
+</body>
+</html>
